@@ -8,48 +8,53 @@
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Source Sans Pro', Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
         }
         header {
-            background: linear-gradient(to bottom, #d35400 50%, #2c3e50 50%);
+            background-color: #1a242f;
             color: #fff;
-            padding: 2.5rem 0 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        header h1 {
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        header .text {
+            display: flex;
+            flex-direction: column;
+        }
+        header .text h1 {
             margin: 0;
-            font-size: 3.5rem;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
         }
-        header h2 {
+        header .text h2 {
             margin: 0;
-            font-size: 1.25rem;
-            font-weight: normal;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        header p {
-            margin: 1rem 0 0;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-weight: 400;
         }
         nav {
-            background: #1a242f;
-            padding: 0.8rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: #8c1c3a;
+            padding: 10px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
         }
         nav ul li {
             margin: 0 15px;
@@ -57,7 +62,7 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             font-size: 1rem;
         }
         nav ul li a:hover {
@@ -68,11 +73,10 @@
             text-align: center;
         }
         .club-section:nth-child(even) {
-            background: #ecf0f1;
+            background: #f7f7f7;
         }
         .club-section h2 {
             margin-bottom: 1rem;
-            font-family: 'Source Sans Pro', sans-serif;
             font-size: 2rem;
         }
         .club-section img {
@@ -96,9 +100,12 @@
 </head>
 <body>
     <header>
-        <h1>Ramaiah</h1>
-        <h2>Institute of Technology</h2>
-        <p>Club Showcase</p>
+        <div class="logo">
+            <img src="brand.png" alt="MSRIT Logo">
+            <div class="text">
+                <h1>Clubs @ RIT</h1>
+            </div>
+        </div>
     </header>
     <nav>
         <ul>
@@ -114,31 +121,31 @@
     
     <section class="club-section" id="tedxmsrit">
         <h2>TEDxMSRIT</h2>
-        <img src="placeholder-tedxmsrit.jpg" alt="TEDxMSRIT Cover Photo">
+        <img src="Tedx.png.png" alt="TEDxMSRIT Cover Photo">
     </section>
     <section class="club-section" id="studiorit">
         <h2>StudioRIT</h2>
-        <img src="placeholder-studiorit.jpg" alt="StudioRIT Cover Photo">
+        <img src="Strio.png.png" alt="StudioRIT Cover Photo">
     </section>
     <section class="club-section" id="coderit">
         <h2>CodeRIT</h2>
-        <img src="placeholder-coderit.jpg" alt="CodeRIT Cover Photo">
+        <img src="coderit.png.png" alt="CodeRIT Cover Photo">
     </section>
     <section class="club-section" id="debsoc">
         <h2>DebSoc</h2>
-        <img src="placeholder-debsoc.jpg" alt="DebSoc Cover Photo">
+        <img src="debsoc.png.png" alt="DebSoc Cover Photo">
     </section>
     <section class="club-section" id="munsoc">
         <h2>MunSoc</h2>
-        <img src="placeholder-munsoc.jpg" alt="MunSoc Cover Photo">
+        <img src="munsoc.png.png" alt="MunSoc Cover Photo">
     </section>
     <section class="club-section" id="theatrix">
         <h2>Theatrix</h2>
-        <img src="placeholder-theatrix.jpg" alt="Theatrix Cover Photo">
+        <img src="theatrix.png.png" alt="Theatrix Cover Photo">
     </section>
     <section class="club-section" id="wmt">
         <h2>WMT</h2>
-        <img src="placeholder-wmt.jpg" alt="WMT Cover Photo">
+        <img src="wmt.png.png" alt="WMT Cover Photo">
     </section>
 
     <footer>
